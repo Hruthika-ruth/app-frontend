@@ -1,0 +1,43 @@
+<mat-sidenav-container>
+  <mat-sidenav
+    #drawer
+    [attr.role]="(isHandSet | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandSet | async) ? 'over' : 'side'"
+    [opened]="(isHandSet | async) === false"
+    fixedInViewport="true"
+  >
+    <reg-angular-sidenav></reg-angular-sidenav>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar
+      class="p-3 flex items-center justify-between gap-4 flex-wrap mb-4"
+    >
+      @if ( isHandSet|async ) {
+      <button (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      } @else {
+      <span></span>
+      }
+      <div class="flex items-center gap-2">
+        <mat-icon color="primary">notifications</mat-icon>
+        <div class="flex items-center gap-2">
+          <div class="w-10 h-10 rounded-[50%] overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1682687982423-295485af248a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHx8"
+              alt="profile photo"
+              class="w-full h-full object-cover object-center"
+            />
+          </div>
+          <button mat-button [matMenuTriggerFor]="menu">
+            <strong>Sadhu Rajkumar</strong>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item href="#about">Logout</button>
+          </mat-menu>
+        </div>
+      </div>
+    </mat-toolbar>
+    <router-outlet
+  /></mat-sidenav-content>
+</mat-sidenav-container>

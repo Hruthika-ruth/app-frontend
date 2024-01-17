@@ -1,0 +1,9 @@
+mat-sidenav-container {
+  @apply min-h-screen overflow-hidden;
+  mat-toolbar {
+    @apply bg-gray-100;
+  }
+  mat-sidenav {
+    @apply h-screen w-[250px] bg-[#26269E];
+  }
+}

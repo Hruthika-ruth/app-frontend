@@ -1,0 +1,19 @@
+h3.about-title {
+  @apply font-bold text-xl;
+}
+h3.section-title {
+  @apply text-center font-bold text-2xl;
+}
+section {
+  @apply my-9;
+  div.mission-card {
+    @apply col-span-1 rounded-3xl shadow-xl shadow-gray-400 p-4 px-5;
+  }
+  form {
+    @apply max-w-[1000px] mx-auto shadow-lg shadow-gray-600 px-5 py-9 grid grid-cols-1 md:grid-cols-2 gap-8 my-4 rounded-xl;
+    input,
+    textarea {
+      @apply block p-3 outline-none rounded-md w-full;
+    }
+  }
+}

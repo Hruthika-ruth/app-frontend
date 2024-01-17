@@ -1,0 +1,182 @@
+<div class="overflow-hidden">
+  <form [formGroup]="formData" (ngSubmit)="onSubmit()">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <mat-card>
+            <mat-card-header>
+              <mat-card-title>Parents Information</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div class="col-span-1">
+                  <label for="ffn" compulsory>Father's First Name</label>
+                  <input
+                    type="text"
+                    name="ffn"
+                    id="ffn"
+                    formControlName="fatherFirstName"
+                  />
+                  <p class="errorText">Father's First name is required</p>
+                </div>
+                <div class="col-span-1">
+                  <label for="fln" compulsory>Father's Last Name</label>
+                  <input
+                    type="text"
+                    name="fln"
+                    id="fln"
+                    formControlName="fatherLastName"
+                  />
+                  <p class="errorText">Father's Last name is required</p>
+                </div>
+                <div class="col-span-1">
+                  <label for="mfn" compulsory>Mother's First Name</label>
+                  <input
+                    type="text"
+                    name="mfn"
+                    id="mfn"
+                    formControlName="motherFirstName"
+                  />
+                  <p class="errorText">Mother's First name is required</p>
+                </div>
+                <div class="col-span-1">
+                  <label for="mln" compulsory>Mother's Last Name</label>
+                  <input
+                    type="text"
+                    name="mln"
+                    id="mln"
+                    formControlName="motherLastName"
+                  />
+                  <p class="errorText">Mother's Last name is required</p>
+                </div>
+              </div>
+              <div class="text-center my-5">
+                <button
+                  (click)="firstSlideNext()"
+                  type="button"
+                  class="py-2 px-10 md:px-16 text-white rounded-md bg-[#26269E]"
+                >
+                  Next
+                </button>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div class="swiper-slide">
+          <mat-card>
+            <mat-card-header>
+              <mat-card-title>Deceased Information</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div class="col-span-1">
+                  <label for="ffn" compulsory>Name of Deceased</label>
+                  <input
+                    type="text"
+                    name="ffn"
+                    id="ffn"
+                    formControlName="deceasedFirstName"
+                  />
+                  <p class="errorText"></p>
+                </div>
+                <div class="col-span-1">
+                  <label for="fln" compulsory>Deceased Last Name</label>
+                  <input
+                    type="text"
+                    name="fln"
+                    id="fln"
+                    formControlName="deceasedLastName"
+                  />
+                  <p class="errorText">Deceased Last Name</p>
+                </div>
+                <div class="col-span-1">
+                  <label for="mfn" compulsory>Place of birth</label>
+                  <input
+                    type="text"
+                    name="mfn"
+                    id="mfn"
+                    formControlName="placeOfBirth"
+                  />
+                  <p class="errorText">Place of Birth</p>
+                </div>
+                <div class="col-span-1">
+                  <label for="mln" compulsory>sex</label>
+                  <input
+                    type="text"
+                    name="mln"
+                    id="mln"
+                    formControlName="sex"
+                  />
+                  <p class="errorText">Sex</p>
+                </div>
+              </div>
+              <div class="text-center my-5">
+                <button
+                  (click)="firstSlideNext()"
+                  type="button"
+                  class="py-2 px-10 md:px-16 text-white rounded-md bg-[#26269E]"
+                >
+                  Next
+                </button>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div class="swiper-slide">
+          <mat-card>
+            <mat-card-header>
+              <mat-card-title>Location Information</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div class="col-span-1">
+                  <label for="ffn" compulsory
+                    >Address of Deceased at time of Death</label
+                  >
+                  <input
+                    type="text"
+                    name="ffn"
+                    id="ffn"
+                    formControlName="addressAtTimeOfDeath"
+                  />
+                  <p class="errorText">Address At Time Of Death</p>
+                </div>
+                <div class="col-span-1">
+                  <label for="fln" compulsory
+                    >Permanent Address Of Deceased</label
+                  >
+                  <input
+                    type="text"
+                    name="fln"
+                    id="fln"
+                    formControlName="permanentAddress"
+                  />
+                  <p class="errorText">permanenet Address</p>
+                </div>
+                <div class="col-span-1">
+                  <label for="mfn" compulsory>Local Area</label>
+                  <input
+                    type="text"
+                    name="mfn"
+                    id="mfn"
+                    formControlName="localArea"
+                  />
+                  <p class="errorText">Local Area</p>
+                </div>
+              </div>
+              <div class="text-center my-5">
+                <button
+                  (click)="firstSlideNext()"
+                  type="button"
+                  class="py-2 px-10 md:px-16 text-white rounded-md bg-[#26269E]"
+                >
+                  Submit
+                </button>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

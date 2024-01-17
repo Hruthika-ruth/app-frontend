@@ -1,0 +1,6 @@
+:host {
+  @apply overflow-hidden;
+}
+.btn-reg {
+  @apply w-[40%] min-w-[200px] max-w-[1200px] py-3 rounded-lg border border-gray-400 text-lg text-white md:text-black;
+}

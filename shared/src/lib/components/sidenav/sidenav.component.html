@@ -1,0 +1,41 @@
+<div class="py-3">
+  <mat-toolbar>
+    <img src="assets/icons/logo.svg" alt="logo" class="mx-auto" href="/about" />
+  </mat-toolbar>
+
+  <mat-nav-list>
+    <mat-list-item
+      routerLink="/home"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <mat-icon matListItemIcon>grid_view</mat-icon>
+      <div matListItemTitle>Dashboard</div>
+    </mat-list-item>
+    <mat-list-item routerLink="notification" routerLinkActive="active">
+      <mat-icon matListItemIcon>notifications</mat-icon>
+      <div matListItemTitle>Notifications</div>
+    </mat-list-item>
+    <mat-list-item routerLink="birth" routerLinkActive="active">
+      <mat-icon matListItemIcon>how_to_reg</mat-icon>
+      <div matListItemTitle>Birth Registration</div>
+    </mat-list-item>
+    <mat-list-item routerLink="death" routerLinkActive="active">
+      <mat-icon matListItemIcon>portrait</mat-icon>
+      <div matListItemTitle>Death Registration</div>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon matListItemIcon>security</mat-icon>
+      <div matListItemTitle>Security</div>
+    </mat-list-item>
+
+    <mat-list-item>
+      <mat-icon matListItemIcon>bar_chart</mat-icon>
+      <div matListItemTitle>Analytics</div>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon matListItemIcon>support_agent</mat-icon>
+      <div matListItemTitle>Help & Support</div>
+    </mat-list-item>
+  </mat-nav-list>
+</div>

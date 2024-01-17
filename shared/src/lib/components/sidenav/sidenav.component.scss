@@ -1,0 +1,14 @@
+mat-toolbar {
+  @apply bg-transparent;
+}
+mat-nav-list {
+  @apply my-4;
+  mat-list-item {
+    * {
+      @apply text-white;
+    }
+    &.active {
+      @apply bg-red-400;
+    }
+  }
+}

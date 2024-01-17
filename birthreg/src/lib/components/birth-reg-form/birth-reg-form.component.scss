@@ -1,0 +1,15 @@
+:host {
+  @apply overflow-hidden;
+}
+
+mat-card {
+  @apply p-3 w-full shadow-xl;
+  mat-card-header {
+    @apply mx-auto font-bold text-xl my-3;
+  }
+}
+form {
+  input {
+    @apply border p-3 rounded-md w-full outline-none;
+  }
+}
